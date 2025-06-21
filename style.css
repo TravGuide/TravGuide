@@ -1,0 +1,845 @@
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+
+        /* ______________________________________________________________________________________________________________ */
+
+        /* navbar start */
+        #navbar {
+            background: #f9f9f9;
+
+        }
+
+        #logo {
+            font-size: 36px;
+            font-weight: 550;
+            color: black;
+            text-shadow: 0px 1px 1px black;
+            margin-bottom: 5px;
+        }
+
+        #logo span {
+            color: #ffa500;
+        }
+
+
+        .navbar-toggler span {
+            color: #ffa500;
+        }
+
+        .navbar-nav {
+            margin-left: 20px;
+        }
+
+        .nav-item .nav-link {
+            font-size: 18px;
+            font-weight: 550;
+            color: black;
+            letter-spacing: 1px;
+            transition: 0.5s ease;
+        }
+
+        .nav-item .nav-link:hover {
+            background: #ffa500;
+            color: white;
+            border-radius: 10px;
+        }
+
+        /* #navbar form button {
+            background: orange;
+            color: black;
+            border: none;
+            font-size: 17px;
+            font-weight: 500;
+            transition: 0.5s;
+        }
+
+        #navbar form button:hover {
+            border: 1px solid #ffa500;
+            background: none;
+            color: #ffa500;
+        } */
+
+        /* navbar end */
+
+        /* _________________________________________________________________________________________________________________ */
+
+        /* PACKAGES in start */
+        .PACKAGES .row .card {
+            height: 550px;
+        }
+
+        .PACKAGES .row .card img {
+            height: 290px;
+        }
+
+        /* PACKAGES in end */
+        /* ______________________________________________________________________________________________________ */
+
+
+        /* home start */
+
+        .home {
+            width: 100%;
+            height: 90vh;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), url(book.webp);
+            background-size: cover;
+        }
+
+        .home .content {
+            text-align: center;
+            padding-top: 240px;
+        }
+
+        .home .content h5 {
+            color: white;
+            font-size: 40px;
+            font-weight: 500;
+            text-shadow: 0px 1px 1px black;
+        }
+
+        .home .content h1 {
+            color: white;
+            font-size: 65px;
+            font-family: sans-serif;
+            font-weight: 600;
+            text-shadow: 0px 1px 1px black;
+            margin-top: 5px;
+        }
+
+        .changecontent::after {
+            content: '';
+            color: #ffa500;
+            text-shadow: 0px 1px 1px black;
+            animation: changetxt 5s infinite linear;
+        }
+
+        @keyframes changetxt {
+
+            0% {
+                    content: '!مرحبا';
+                }
+            15% {
+                content: '!مرحبا';
+            }
+
+          35% {
+                content: '환영 !';
+            }
+
+            55% {
+                content: 'Welcome!';
+            }
+
+            75% {
+                content: 'Hoş geldin!';
+            }
+
+            100% {
+                content: 'Selamat datang!';
+            }
+        }
+
+        .home .content p {
+            font-size: 18px;
+            color: white;
+            font-weight: 600;
+            text-shadow: 0px 1px 1px black;
+            margin-bottom: 30px;
+            margin-top: 5px;
+        }
+
+        .home .content a {
+            padding: 10px;
+            background: white;
+            color: black;
+            letter-spacing: 1px;
+            font-weight: 550;
+            border-radius: 8px;
+            transition: 0.5s;
+            text-decoration: none;
+            font-size: 19px;
+        }
+
+        .home .content a:hover {
+            background: #ffa500;
+            color: white;
+        }
+
+        @media (max-width:850px) {
+            .home {
+                background-position: 50%;
+            }
+        }
+
+        @media (max-width:450px) {
+            .home .content h5 {
+                font-size: 25px;
+            }
+
+            .home .content h1 {
+                font-size: 38px;
+            }
+
+            .home .content p {
+                font-size: 15px;
+            }
+        }
+
+        /* home end */
+        /* _______________________________________________________________________________________________________________________________________ */
+
+        /* book start */
+        /* .book {
+    background: #f9f9f9;
+    padding: 50px;
+}
+
+.main-text h1 {
+    text-align: center;
+    text-shadow: 0px 1px 1px black;
+    font-weight: 600;
+}
+
+.main-text h1 span {
+    color: #ffa500;
+}
+
+.book .card {
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px -6px black;
+}
+
+.book .row {
+    margin-top: 30px;
+}
+
+.book form input {
+    padding: 10px;
+    color: black;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px -6px black;
+}
+
+.book form textarea {
+    border: none;
+    font-size: 18px;
+    font-weight: 450;
+    border-radius: 10px;
+    resize: none;
+    box-shadow: 0px 5px 5px -6px black;
+    height: 200px;
+}
+
+.book .submit {
+    width: 160px;
+    font-size: 18px;
+    font-weight: 550;
+    background: #ffa500;
+    color: white;
+    margin-top: 10px;
+    transition: 0.5s;
+}
+
+.book .submit:hover {
+    width: 180px;
+}
+
+@media (max-width:765px) {
+    .book {
+        padding: 0;
+    }
+
+    .main-text {
+        padding: 20px;
+    }
+}
+
+.book .card img {
+    opacity: 0.8;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px -6px black;
+}
+
+.book .card img:hover {
+    opacity: 1;
+} */
+
+        /* book end */
+
+
+
+
+        /* _____________________________________________________________________________________________________________________ */
+
+        /* countries start  */
+        .cart_body {
+
+            display: flex;
+            /*عشان عناصر الصفحة يكونوا جمب بعض مش فوق بعضْ*/
+            justify-content: center;
+            /*مكان كل حاجة في الصفحة*/
+            align-items: center;
+            /*ترتيب كل حاجة في الصفحة*/
+            height: auto;
+            /*ارتفاع كل حاجة في الصفحة*/
+            background: url('offer-background.jpg');
+            /*لون خلفية الصفحة*/
+            position: relative;
+            /*مكان كل حاجة في الصفحة تاني عشان اضمن مفيش حاجة تتحرك*/
+            overflow: hidden;
+            /*السلايدر عبارة عن سكرول بار بالعرض دي بقا بتخفي السكرول بار*/
+            bottom: 10px;
+            margin: 0 50px;
+            border-radius: 15px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.753);
+
+        }
+
+        .countries1 {
+            margin-top: 30px;
+        }
+
+        .countries1 h1 {
+            text-shadow: 0px 1px 1px black;
+            font-weight: 600;
+            font-family: sans-serif;
+            text-align: center;
+        }
+
+        .countries1 span {
+            color: #ffa500;
+        }
+
+        .slider-container {
+            position: relative;
+            /*مكان الكونتينر*/
+            display: flex;
+            /*عشان العناصر جوا الكونتينر يكونوا جمب بعض مش فوق بعض*/
+            align-items: center;
+            /*ترتيب عناصر الكونتينر*/
+            width: 100%;
+            /*العرض 100% من الرقم اللي في السطر اللي بعده*/
+            max-width: 1189px;
+            /*اكبر عرض ممكن*/
+        }
+
+        .slider {
+            display: flex;
+            /*عشان الكروت يبقوا جمب بعض مش فوق بعض*/
+            gap: 10px;
+            /*المسافة بين كل كرت*/
+            overflow-x: auto;
+            /*حركة الكروت على ا لمحروك اكس*/
+            scroll-behavior: smooth;
+            /*عشان حركة الكروت تكون سلسة على التاتش سكرين*/
+            white-space: nowrap;
+            /*عشان ميكونش في مساحات بيضة بين عناصر السلايدر*/
+            padding: 20px;
+            /*المسافة بين الكروت والاسهم*/
+            cursor: grab;
+            /*شكل السهم لما تقف على الكروت*/
+            scrollbar-width: none;
+            /*عشان السكرول بار متظهرش لما تقف عليها*/
+        }
+
+        .slider::-webkit-scrollbar {
+            /*اضافة السكرول بار نفسها*/
+            display: none;
+        }
+
+        .card {
+            /*اعدادات الكروت*/
+            flex: 0 0 auto;
+            /*بيحدد طريقة تصرف اي عنصر معمول عليه فليكس في الكروت*/
+            width: 350px;
+            /*عرض الكروت*/
+            height: auto;
+            /*طول الكروت*/
+            background: white;
+            /*لون الكرت*/
+            border-radius: 20px;
+            /*انحناء اطراف الكرت*/
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            /*ضل الكرت*/
+            overflow: hidden;
+            /*عشان حواف الكونتينر متغطيش على اطرف الكروت*/
+            display: flex;
+            /*عشان يبقوا جمب بعض*/
+            flex-direction: column;
+            /*عشان عناصر الكرت يكونوا تحت بعض مش جمب بعض*/
+        }
+
+        /*.·°՞(¯□¯)՞°·. حاسس ان تعليقاتي مش مفهومة*/
+        .image {
+            /*اعدادات الصور*/
+            width: 100%;
+            /*عرض الصورة جوا الكرت*/
+            height: 300px;
+            /*طول الصورة جوا الكرت*/
+        }
+
+        /*(╥﹏╥)ايدي وجعتني*/
+        .image img {
+            /*اعدادات الصور جوا ديف الصور اللي جوا ديف الكروت اللي جوا ديف السلايدر*/
+            width: 100%;
+            /*عرض الصور بالنسبة لحجم الكرت*/
+            height: 100%;
+            /*طول الصور بالنسبة لحجم الكرت*/
+            object-fit: cover;
+            /*عشان الصورة تظهر كلها*/
+            /* opacity: 0.7; */
+        }
+
+        /* .image img:hover {
+            opacity: 1;
+        } */
+
+        .card-content {
+            /*اعدادات الحاجات جوا الكرت*/
+            padding: 15px;
+            /*تباعد العناصر جوا الكروت*/
+            flex-grow: 1;
+            /*بتحدد العنصر اللي واخد فليكس ياخد كام مكان في الشاشة*/
+            display: flex;
+            /*(ദി˙ᗜ˙) فليكس*/
+            flex-direction: column;
+            /*عشان عناصر الكرت يكونوا تحت بعض مش جمب بعض*/
+            gap: 10px;
+            /*المسافة بين كل عنصر في الكرت*/
+        }
+
+        .card-content span {
+            color: #ffa500;
+        }
+
+        .card h1 {
+            /*اعدادت اسامي الدول*/
+            /* font-size: clamp(1.2rem, 4vw, 1.8rem); */
+            font-size: 30px;
+            font-weight: 600;
+            /*حجم الخط في شاشة الكمبيوتر والموبايل*/
+            color: #333;
+            /*لون الخط*/
+            margin-bottom: 5px;
+            /*حجم المسافةالفاضية بين اسم الدولة والوصف*/
+        }
+
+        .card p {
+            /*اعدادات وصف الدول*/
+            font-size: clamp(0.9rem, 3vw, 1.2rem);
+            /*حجم الخط في شاشة الكمبيوتر والموبايل*/
+            line-height: 1.4;
+            /*التباعد بين السطور (مفيدة لو عايز تعدل مكان الزرار)*/
+            color: #666;
+            /*لون الخط*/
+            overflow-wrap: break-word;
+            /*عشان الكلام ينزل سطر جديد لوحده من غير <br>*/
+            white-space: normal;
+            /*عشان الكلام ميطلعش برا الكرت*/
+        }
+
+        .card button {
+            padding: 5px 10px;
+            background: #ffa500;
+            border-radius: 10px;
+            font-weight: 600;
+            border: none;
+
+        }
+
+        .card button:hover {
+            width: 150px;
+            background: none;
+            background: #ffa600d5;
+            transition: 0.5s;
+        }
+
+        /*(ᗒᗣᗕ)՞دا لسة في كتير تبا*/
+        .arrow {
+            /*اعدادات الاسهم*/
+            position: center;
+            /*مكان الاسهم*/
+            background: rgba(0, 0, 0, 0.0);
+            /*خلفية الاسهم*/
+            color: black;
+            /*لون الاسهم*/
+            border: none;
+            /*اطار حوالين الاسهم*/
+            padding: 10px;
+            /*التباعد بين الاسهم والكروت*/
+            cursor: pointer;
+            /*شكل الماوس لما تقف على الاسهم*/
+            font-size: 20px;
+            /*حجم الاسهم (مش شغال عشان انا خليت الاسهم صور)*/
+            border-radius: 50%;
+            /*مدى انحناء الاطار بتاع الاسهم*/
+            z-index: 10;
+            /*عشان الاسهم تبقا قبل الكروت مش العكس*/
+        }
+
+        .left-arrow {
+            left: 10px;
+            /*حجم السهم الشمال (مش شغال عشان خليت الكروت صور)*/
+        }
+
+        .right-arrow {
+            right: 10px;
+            /*حجم السهم اليمين (مش شغال عشان خليت الكروت صور)*/
+        }
+
+        @media (max-width: 600px) {
+
+            /*(((((((((((((اعدادات شاشة الموبايل بس)))))))))))))*/
+            .card {
+                width: 260px;
+                /*عرض الكروت*/
+                height: 450px;
+                /*طول الكروت*/
+            }
+
+            .image {
+                height: 250px;
+                /*طول الصور*/
+            }
+
+            .card-content {
+                padding: 8px;
+                /*تباعد عناصر الكروت عن بعض*/
+                gap: 5px;
+                /*تباعد النصوص جوالكروت عن بعض*/
+            }
+
+            .card h1 {
+                /*اعدادات اسامي الدول*/
+                font-size: clamp(1.5rem, 3vw, 1rem);
+                /*حجم خط اسم الدولة*/
+                margin-bottom: 2px;
+                /*التباعد بين اسم الدولة والوصف*/
+            }
+
+            .card p {
+                /*اعدادات وصف الدول*/
+                font-size: clamp(1.1rem, 2vw, 0.8rem);
+                /*حجم خط وصف الدولة*/
+                line-height: 1.1;
+                /*التباعد بين السطور (مفيدة لو عايز تعدل مكان الزرار)*/
+            }
+        }
+
+
+
+
+        /* countries end  */
+
+        /* _____________________________________________________________________________________________________________________________ */
+        /* gallery start */
+        #Gallery h2 {
+            font-family: sans-serif;
+        }
+
+        .gallre-img img {
+            width: 280px;
+            height: 200px;
+            margin: 20px;
+            border-radius: 15px;
+            opacity: 0.7;
+            cursor: pointer;
+            transition: 0.3s ease;
+        }
+
+        .gallre-img img:hover {
+            opacity: 1;
+            transform: scale(1.1);
+        }
+
+        #Gallery {
+            background: url('offer-background.jpg') center center/cover no-repeat;
+            margin-top: -76px;
+            padding-bottom: 50px;
+        }
+
+        #Gallery h2 {
+            color: #d5cfcf;
+            font-size: 35px;
+            font-weight: 800;
+            text-align: center;
+            text-transform: capitalize;
+            padding: 30px 0;
+        }
+
+        #Gallery h2 span {
+            color: #ffa500;
+            font-size: 35px;
+            font-weight: 800;
+            text-align: center;
+            text-transform: capitalize;
+            padding: 30px 0;
+        }
+
+        .gallre-img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        /* gallery end */
+        /* ______________________________________________________________________________________________________________________________________ */
+        /* contact us start */
+        .countries2 h1 {
+            text-align: center;
+            font-weight: 650;
+
+        }
+
+        .countries2 h1 span {
+            color: #f1b443;
+        }
+
+        #contact {
+            background: #f9f9f952;
+            padding: 20px 0;
+        }
+
+        .contact-info h3 {
+            font-size: 30px;
+            font-weight: 700;
+            color: black;
+            text-transform: capitalize;
+            padding: 20px 0;
+
+        }
+
+        .contact-info p {
+            font-size: 18px;
+            font-weight: 500;
+            color: #9a9a9a;
+            text-transform: capitalize;
+            line-height: 30px;
+        }
+
+        .contact-info i {
+            font-size: 20px;
+            color: #f1b443;
+            padding-right: 10px;
+        }
+
+        .icon a i {
+            color: #fff;
+            font-size: 30px;
+            border: none;
+            border-radius: 10px;
+            padding: 5px 15px;
+            background: #f1b443;
+            transition: transform 0.4s;
+        }
+
+        .icon a i:hover {
+            transform: translateY(-10px);
+            color: #383848;
+        }
+
+        .contact-content {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .contact-content.contact-info {
+            width: 50%;
+        }
+
+        .contact-content.form {
+            width: 50%;
+        }
+
+        .form form input,
+        textarea {
+            display: block;
+            margin: 20px 0;
+            border: none;
+            font-size: 25px;
+            font-weight: 500;
+            color: black;
+            background: #e3e2ddce;
+            width: 100%;
+            padding: 20px 15px;
+            text-transform: capitalize;
+            outline: none;
+            border-radius: 8px;
+        }
+
+        .btn_mass {
+            font-size: 18px;
+            font-weight: 400;
+            padding: 5px 15px;
+            background: #f1b443;
+            color: #fff;
+            border-radius: 10px;
+            text-align: center;
+            margin-left: 70px;
+            cursor: pointer;
+            border: none;
+        }
+
+        .btn_mass:hover {
+            width: 200px;
+        }
+
+        /* contact us end */
+
+
+        /* __________________________________________________________________________________________________ */
+        /* PACKAGES start  */
+
+        .card-title span {
+            color: #ffa500;
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        #title a {
+            /* background: #ffa500; */
+            border: none;
+        }
+
+        #title a:hover {
+            width: 100px;
+        }
+
+        .card1 img {
+            height: 360px;
+            cursor: pointer;
+            border-radius: none;
+        }
+
+        .card1 {
+            border-radius: 10px;
+        }
+
+        .card1 img {
+            border-radius: 10px 10px 0 0;
+        }
+
+
+        /* PACKAGES end  */
+
+        /* _______________________________________________________________________________________________________ */
+
+        /* services start  */
+        /* .content1 {
+            background-image: url('offer-background.jpg');
+            width: 100%;
+            height: 300px;
+        }
+
+        .services .heden h1 {
+            text-align: center;
+            font-weight: 600;
+            font-family: sans-serif;
+        }
+
+        .services .heden span {
+            color: #ffa500;
+        }
+
+        .carousel-indicators button {
+            width: 15px !important;
+            height: 15px !important;
+            border-radius: 50%;
+            margin: 7px !important;
+        }
+
+        .content {
+            height: 500px;
+        }
+
+        .egypt img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin: 20px;
+        } */
+        /* services end  */
+        /* ______________________________________________________________________________________________________ */
+
+
+
+
+        /* About start */
+        /* .about {
+            margin-bottom: 0px;
+        } */
+
+        .about .tit {
+            text-align: center;
+        }
+
+        .about .tit h2 {
+            font-family: sans-serif;
+            font-weight: 600;
+            text-shadow: 0px 1px 1px black;
+            font-size: 50px;
+        }
+
+        .about .tit h2 span {
+            color: #ffa500;
+        }
+
+        .about .tit p {
+            color: #868484;
+        }
+
+        .textp {
+            height: 330px;
+            margin-left: 30px;
+            font-size: 18px;
+            line-height: 40px;
+            font-family: sans-serif;
+        }
+
+        .row1 .row p {
+            margin-left: 20px;
+        }
+
+        .card2 {
+            border-radius: 20px;
+            /* transition: 0.3s ease; */
+        }
+
+        .card2:hover {
+            /* transform: scale(1.1); */
+        }
+
+        .card2 img {
+            border-radius: 20px;
+        }
+
+        @media (max-width : 650px) {
+            .contact-content {
+                flex-direction: column;
+            }
+
+            .form form input,
+            textarea {
+                font-size: 20px;
+                font-weight: 400;
+                padding: 10px 10px;
+            }
+        }
+
+        /* About end */
